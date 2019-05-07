@@ -20,7 +20,6 @@ public interface BookRepo extends JpaRepository<Book,Long>{
 	Page<Book> byAuthorId(@Param("author_id") Long authorId, Pageable page);
 	
 	@Query(value = "SELECT * FROM book WHERE book_title = :query OR book_synopsis = :query LIMIT 10", nativeQuery=true)
-	List<Book> search(@Param("query") String query);
-	
+	List<Book> search(@Param("query") String query);	
 
 }

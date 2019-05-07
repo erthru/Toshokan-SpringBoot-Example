@@ -56,6 +56,4 @@ public class Author {
 		this.authorEmail = authorEmail;
 	}
 	
-	
-	
 }
